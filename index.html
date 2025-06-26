@@ -1,111 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Churrascaria Fogo & Brasa</title>
-
-  <!-- Font Awesome para ícones -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
-
-  <!-- CSS principal -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechFix Soluções</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-  <!-- HEADER COM NAVEGAÇÃO -->
-  <header class="header">
-    <div class="header__overlay"></div>
-    <div class="header__container container">
-<h1 class="logo">
-  <span class="churrascaria">Churrascaria</span>
-  <span class="fogo">Fogo</span>
-  &amp;
-  <span class="brasa">Brasa</span>
-  <i class="fas fa-utensils"></i>
-</h1>
-
-      <nav class="nav" aria-label="Menu principal">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#sobre" class="nav__link">Sobre</a></li>
-          <li class="nav__item"><a href="#menu" class="nav__link">Cardápio</a></li>
-          <li class="nav__item"><a href="#galeria" class="nav__link">Galeria</a></li>
-          <li class="nav__item"><a href="#reservar" class="nav__link">Reservar</a></li>
-          <li class="nav__item"><a href="#contato" class="nav__link">Contato</a></li>
-        </ul>
+  <header class="fade-in">
+    <div class="container header-container">
+      <h1 class="logo">TechFix Soluções</h1>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
       </nav>
     </div>
   </header>
 
-  <!-- SEÇÃO HERO COM CHAMADA -->
-  <section class="hero">
-    <div class="hero__content container">
-      <h2 class="hero__title">O melhor churrasco da cidade!</h2>
-      <p class="hero__subtitle">Carne na brasa, sabor irresistível é atendimento nota 10.</p>
-      <a href="#reservar" class="btn btn--primary">Reserve sua mesa</a>
+  <section class="hero slide-in">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2>Soluções criativas e digitais</h2>
+          <p>Do seu site à automação da sua empresa.</p>
+          <a href="#contato" class="btn">Fale conosco</a>
+        </div>
+        <div class="hero-image">
+          <img src="https://cdn-icons-png.flaticon.com/512/2721/2721286.png" alt="Tech Illustration" />
+        </div>
+      </div>
     </div>
   </section>
 
-  <main>
-    <!-- SOBRE NÓS -->
-    <section id="sobre" class="section container">
-      <h2 class="section__title">Sobre Nós</h2>
-      <p class="section__text">
-        Fundada em 1998, a Churrascaria Fogo &amp; Brasa é referência em carnes nobres e cortes especiais,
-        servidos com aquele tempero caseiro que só a gente tem.
-      </p>
-      <img src="img/equipe.png" alt="Foto da churrascaria" class="section__image" />
-    </section>
-
-    <!-- CARDÁPIO -->
-    <section id="menu" class="section container">
-      <h2 class="section__title">Nosso Cardápio</h2>
-      <ul class="menu__list">
-        <li class="menu__item"><i class="fas fa-drumstick-bite"></i> Picanha na Brasa - R$ 65,00</li>
-        <li class="menu__item"><i class="fas fa-drumstick-bite"></i> Costela Suína - R$ 50,00</li>
-        <li class="menu__item"><i class="fas fa-drumstick-bite"></i> Fraldinha - R$ 55,00</li>
-        <li class="menu__item"><i class="fas fa-drumstick-bite"></i> Linguiça Artesanal - R$ 25,00</li>
-        <li class="menu__item"><i class="fas fa-wine-glass-alt"></i> Caipirinha - R$ 18,00</li>
-      </ul>
-    </section>
-
-    <!-- GALERIA -->
-    <section id="galeria" class="section container">
-      <h2 class="section__title">Galeria de Carnes</h2>
-      <div class="gallery">
-        <img src="img/pic4n.jpg" alt="Picanha suculenta" class="gallery__image" />
-        <img src="img/costela.jpg" alt="Costela assada" class="gallery__image" />
-        <img src="img/demo03.jpg" alt="Churrasco na brasa" class="gallery__image" />
-        <img src="img/carnee.jpg" alt="Carne ao ponto" class="gallery__image" />
+  <section id="sobre" class="sobre fade-in">
+    <div class="container sobre-grid">
+      <div class="sobre-img">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055644.png" alt="Sobre a empresa" />
       </div>
-    </section>
+      <div class="sobre-text">
+        <h2>Quem somos</h2>
+        <p>Especialistas em soluções digitais e manutenção técnica com foco em inovação e resultado.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- RESERVA -->
-    <section id="reservar" class="section container">
-      <h2 class="section__title">Faça sua Reserva</h2>
-      <form action="#" method="post" class="form-reserva" aria-label="Formulário de reserva">
-        <input type="text" name="nome" placeholder="Seu nome" required aria-required="true" />
-        <input type="tel" name="telefone" placeholder="Telefone" required aria-required="true" />
-        <input type="date" name="data" required aria-required="true" />
-        <button type="submit" class="btn btn--primary">Enviar</button>
+  <section id="servicos" class="servicos slide-in">
+    <div class="container">
+      <h2>O que fazemos</h2>
+      <div class="cards animados">
+        <div class="card vibrante">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Sites modernos</h3>
+          <p>Design, velocidade e SEO para sua presença online.</p>
+        </div>
+        <div class="card vibrante">
+          <i class="fas fa-tools"></i>
+          <h3>Suporte técnico</h3>
+          <p>Manutenção em computadores, redes e servidores.</p>
+        </div>
+        <div class="card vibrante">
+          <i class="fas fa-robot"></i>
+          <h3>Automação</h3>
+          <p>Automatize processos e ganhe produtividade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="depoimentos fade-in" style="background: linear-gradient(135deg, #222831, #393e46); padding: 60px 0; color: #eee;">
+    <div class="container">
+      <h2 style="color:#f4c531;">Clientes felizes</h2>
+      <div class="cards animados">
+        <div class="card depoimento vibrante">
+          <p>"Atendimento ágil e resultado incrível!"</p>
+          <strong>— João Silva</strong>
+        </div>
+        <div class="card depoimento vibrante">
+          <p>"Meu site ficou incrível. Recomendo muito!"</p>
+          <strong>— Marina Rocha</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contato slide-in">
+    <div class="container">
+      <h2>Vamos conversar</h2>
+      <form>
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu e-mail" required />
+        <textarea placeholder="Mensagem..." required></textarea>
+        <button type="submit">Enviar</button>
       </form>
-    </section>
+    </div>
+  </section>
 
-    <!-- CONTATO -->
-    <section id="contato" class="section container">
-      <h2 class="section__title">Contato</h2>
-      <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
-      <p><i class="fas fa-envelope"></i> contato@churrascariafogo.com.br</p>
-      <p><i class="fab fa-instagram"></i> @churrascariafogo</p>
-    </section>
-  </main>
-
-  <!-- RODAPÉ -->
-  <footer class="footer">
-    <p>© 2025 Churrascaria Fogo &amp; Brasa - Todos os direitos reservados</p>
+  <footer class="fade-in">
+    <div class="container">
+      <p>&copy; 2025 TechFix Soluções. Todos os direitos reservados.</p>
+    </div>
   </footer>
 
-</body>
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
 
+    document.querySelectorAll('.fade-in, .slide-in').forEach(el => observer.observe(el));
+  </script>
+</body>
 </html>
