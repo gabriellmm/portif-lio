@@ -1,78 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Barbearia Dom Bigode</title>
+  <title>Churrascaria Fogo & Brasa</title>
 
   <!-- Font Awesome para ícones -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    crossorigin="anonymous"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
 
+  <!-- CSS principal -->
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <div class="overlay"></div>
 
-  <header>
-    <h1 class="fade-in">Barbearia Dom Bigode</h1>
-    <p class="fade-in delay1">Estilo, tradição e navalha afiada.</p>
+<body>
+  <!-- HEADER COM NAVEGAÇÃO -->
+  <header class="header">
+    <div class="header__overlay"></div>
+    <div class="header__container container">
+<h1 class="logo">
+  <span class="churrascaria">Churrascaria</span>
+  <span class="fogo">Fogo</span>
+  &amp;
+  <span class="brasa">Brasa</span>
+  <i class="fas fa-utensils"></i>
+</h1>
+
+      <nav class="nav" aria-label="Menu principal">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li class="nav__item"><a href="#menu" class="nav__link">Cardápio</a></li>
+          <li class="nav__item"><a href="#galeria" class="nav__link">Galeria</a></li>
+          <li class="nav__item"><a href="#reservar" class="nav__link">Reservar</a></li>
+          <li class="nav__item"><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="sobre" class="fade-in delay2">
-      <h2><i class="fas fa-cut"></i> Sobre Nós</h2>
-      <p>
-        Somos especialistas em cortes clássicos e modernos, com atendimento de
-        primeira e aquele cafezinho que só a Dom Bigode tem.
-      </p>
-     <div class="fotos-sobre">
-  <img src="img/cliente.webp" alt="Cliente satisfeito 1" />
-  <img src="img/cliente02.avif" alt="Cliente satisfeito 2" />
-  <img src="img/estilo.avif" alt="Estilo Dom Bigode 1" />
-  <img src="img/estilo02.avif" alt="Estilo Dom Bigode 2" />
-</div>
+  <!-- SEÇÃO HERO COM CHAMADA -->
+  <section class="hero">
+    <div class="hero__content container">
+      <h2 class="hero__title">O melhor churrasco da cidade!</h2>
+      <p class="hero__subtitle">Carne na brasa, sabor irresistível é atendimento nota 10.</p>
+      <a href="#reservar" class="btn btn--primary">Reserve sua mesa</a>
+    </div>
+  </section>
 
+  <main>
+    <!-- SOBRE NÓS -->
+    <section id="sobre" class="section container">
+      <h2 class="section__title">Sobre Nós</h2>
+      <p class="section__text">
+        Fundada em 1998, a Churrascaria Fogo &amp; Brasa é referência em carnes nobres e cortes especiais,
+        servidos com aquele tempero caseiro que só a gente tem.
+      </p>
+      <img src="img/equipe.png" alt="Foto da churrascaria" class="section__image" />
     </section>
 
-    <section id="servicos" class="fade-in delay3">
-      <h2><i class="fas fa-scissors"></i> Serviços</h2>
-      <ul>
-        <li><i class="fas fa-male"></i> Corte Masculino - R$ 30</li>
-        <li><i class="fas fa-beard"></i> Barba na Navalha - R$ 20</li>
-        <li><i class="fas fa-cut"></i> Combo Corte + Barba - R$ 45</li>
+    <!-- CARDÁPIO -->
+    <section id="menu" class="section container">
+      <h2 class="section__title">Nosso Cardápio</h2>
+      <ul class="menu__list">
+        <li class="menu__item"><i class="fas fa-drumstick-bite"></i> Picanha na Brasa - R$ 65,00</li>
+        <li class="menu__item"><i class="fas fa-drumstick-bite"></i> Costela Suína - R$ 50,00</li>
+        <li class="menu__item"><i class="fas fa-drumstick-bite"></i> Fraldinha - R$ 55,00</li>
+        <li class="menu__item"><i class="fas fa-drumstick-bite"></i> Linguiça Artesanal - R$ 25,00</li>
+        <li class="menu__item"><i class="fas fa-wine-glass-alt"></i> Caipirinha - R$ 18,00</li>
       </ul>
     </section>
 
-    <section id="contato" class="fade-in delay4">
-      <h2><i class="fas fa-phone"></i> Agende Agora</h2>
-      <a href="https://wa.me/5511999999999" class="botao-whats">
-      ><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a
-      >
+    <!-- GALERIA -->
+    <section id="galeria" class="section container">
+      <h2 class="section__title">Galeria de Carnes</h2>
+      <div class="gallery">
+        <img src="img/pic4n.jpg" alt="Picanha suculenta" class="gallery__image" />
+        <img src="img/costela.jpg" alt="Costela assada" class="gallery__image" />
+        <img src="img/demo03.jpg" alt="Churrasco na brasa" class="gallery__image" />
+        <img src="img/carnee.jpg" alt="Carne ao ponto" class="gallery__image" />
+      </div>
     </section>
 
-<section id="galeria">
-  <h2><i class="fas fa-images"></i> Nossa Galeria</h2>
-  <div class="galeria-container">
-    <div class="galeria-item">
-      <img src="img/corteclassico.avif" alt="Corte masculino clássico" />
-    </div>
-    <div class="galeria-item">
-      <img src="img/barba.avif" alt="Barba na navalha" />
-    </div>
-  </div>
-</section>
+    <!-- RESERVA -->
+    <section id="reservar" class="section container">
+      <h2 class="section__title">Faça sua Reserva</h2>
+      <form action="#" method="post" class="form-reserva" aria-label="Formulário de reserva">
+        <input type="text" name="nome" placeholder="Seu nome" required aria-required="true" />
+        <input type="tel" name="telefone" placeholder="Telefone" required aria-required="true" />
+        <input type="date" name="data" required aria-required="true" />
+        <button type="submit" class="btn btn--primary">Enviar</button>
+      </form>
+    </section>
 
-
- 
-
+    <!-- CONTATO -->
+    <section id="contato" class="section container">
+      <h2 class="section__title">Contato</h2>
+      <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+      <p><i class="fas fa-envelope"></i> contato@churrascariafogo.com.br</p>
+      <p><i class="fab fa-instagram"></i> @churrascariafogo</p>
+    </section>
   </main>
 
-  <footer>
-    <p><i class="fab fa-instagram"></i> Siga a Dom Bigode no Instagram: @barbeariadombigode</p>
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <p>© 2025 Churrascaria Fogo &amp; Brasa - Todos os direitos reservados</p>
   </footer>
+
 </body>
+
 </html>
